@@ -16,11 +16,11 @@ This tutorial covers how to burn the Raspberry Pi system, how to find the IP add
 
 Download link： [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
 
-![image-20240424130313356](./media/image-20240424130313356.png)
+![](./media/A1.png)
 
 After the download is successful, click Install and open it after installation.
 
-![image-20240424130808984](./media/image-20240424130808984.png)
+![](./media/A2.png)
 
  
 
@@ -28,59 +28,59 @@ After the download is successful, click Install and open it after installation.
 
 Download link：[https://www.chiark.greenend.org.uk/~sgtatham/putty/](https://www.chiark.greenend.org.uk/~sgtatham/putty/)
 
-![img](./media/wps1.jpg) 
+![img](./media/A3.png) 
 
-![img](./media/wps2.jpg)
+![img](./media/A4.png)
 
-a. After downloading the putty driver file![img](./media/wps3.jpg), double-click it and then click "Next".
+a. After downloading the putty driver file![img](./media/A5.png), double-click it and then click "Next".
 
-​    ![img](./media/wps4.jpg)
+​    ![img](./media/A6.png)
 
 b. Tap “Next”.
 
-  ![img](./media/wps5.jpg)
+  ![img](./media/A7.png)
 
 c. Tap “Install Putty files” and “Install”.
 
-  ![img](./media/wps6.jpg)
+  ![img](./media/A8.png)
 
 d. Tap “Finish”.
 
- ![img](./media/wps7.jpg)
+ ![img](./media/A9.png)
 
 e. Using Method
 
 Enter the IP address in the "Host Name (or IP address)" box and click "OPEN".
 
-![image-20240424115215036](./media/image-20240424115215036.png)
+![](./media/A10.png)
 
 login as：If you don't modify it, the default is "pi".
 
 pi@xxx.xxx.xxx.xxx‘s password：If you don't modify it, the default is “raspberry”.
 
-![image-20240424141145027](./media/image-20240424141145027.png)
+![](./media/A11.png)
 
 ##### (3) SSH Remote Login Software WinSCP (can view the Raspberry Pi IP address)
 
 Download link：[https://winscp.net/eng/download.php](https://winscp.net/eng/download.php)
 
-a. After downloading the WinSCP software file![img](./media/wps10-1713939727629-5.jpg), double-click it, then click ![img](./media/wps12-1713939727629-7.jpg).
+a. After downloading the WinSCP software file![img](./media/A12.png), double-click it, then click ![img](./media/A13.png).
 
-​     ![img](./media/wps13-1713939727629-8.jpg)
+​     ![img](./media/A14.png)
 
 b. Click “Accept”，“Next” and “Install”.
 
-​    ![img](./media/wps14-1713939727629-9.jpg)
+​    ![img](./media/A15.png)
 
-​    ![img](./media/wps15-1713939727629-10.jpg)
+​    ![img](./media/A16.png)
 
-​    ![img](./media/wps16-1713939727630-11.jpg)
+​    ![img](./media/A17.png)
 
-   ![img](./media/wps17-1713939727630-12.jpg)
+   ![img](./media/A18.png)
 
 c. After a few seconds, the installation will be completed, click "Finish".
 
-   ![img](./media/wps18-1713939727630-13.jpg)
+   ![img](./media/A19.png)
 
 
 
@@ -90,11 +90,11 @@ c. After a few seconds, the installation will be completed, click "Finish".
 
 Download link：[https://www.realvnc.com/en/connect/download/viewer/](https://www.realvnc.com/en/connect/download/viewer/)
 
-![img](./media/wps25-1713940996905-40.jpg)
+![img](./media/A20.png)
 
  Then Install it.
 
-![image-20240424144504982](./media/image-20240424144504982.png)
+![](./media/A21.png)
 
 #### 3.Operation Method
 
@@ -104,33 +104,33 @@ This step can only be performed after installing the software.
 
 We use Raspberry Pi 5, so select Raspberry Pi 5 in the "Raspberry Pi Device".
 
-![image-20240424131421972](./media/image-20240424131421972.png)
+![image-20240424131421972](./media/A22.png)
 
 Select "Raspberry Pi OS (64-bit)" in the column below "Operating System" (64-bit or 32-bit is according to the bit of your Raspberry Pi).
 
-![image-20240424131615662](./media/image-20240424131615662.png)
+![image-20240424131615662](./media/A23.png)
 
 Select the SD card to which we want to burn the Raspberry Pi image system in the column below "Storage".
 
-![image-20240424132318451](./media/image-20240424132318451.png)
+![image-20240424132318451](./media/A24.png)
 
-Then click![image-20240424132856746](./media/image-20240424132856746.png) to start burning
+Then click![image-20240424132856746](./media/A25.png) to start burning
 
 After the image system is burned, unplug the card reader and plug it in again to see "bootfs". Create a new text file named SSH, delete the .txt, and then copy it to the bootfs directory of the SD card. Then the SSH login function can be enabled, as shown in the figure below:
 
-![img](./media/wps46.jpg)
+![img](./media/A26.png)
 
 ##### Step 2: Use WinSCP software to find the IP address of the Raspberry Pi
 
-Use WinSCP to log in through the default name, default username, and default password of the Raspberry Pi system. (Only one Raspberry Pi can be connected to the same network).![image-20240424142624855](./media/image-20240424142624855.png)
+Use WinSCP to log in through the default name, default username, and default password of the Raspberry Pi system. (Only one Raspberry Pi can be connected to the same network).![image-20240424142624855](./media/A27.png)
 
- ![image-20240424142642564](./media/image-20240424142642564.png)
+ ![image-20240424142642564](./media/A28.png)
 
-To view the ip address and mac address, click![image-20240424143853242](./media/image-20240424143853242.png) to link and open the PuTTY software, then enter `ip a` to see the ip address. Or click![image-20240424144005368](./media/image-20240424144005368.png) and then enter `ip a` in the command box to see the ip address.![image-20240424142704026](./media/image-20240424142704026.png)
+To view the ip address and mac address, click![](./media/A29.png) to link and open the PuTTY software, then enter `ip a` to see the ip address. Or click![](./media/A30.png) and then enter `ip a` in the command box to see the ip address.![](./media/A31.png)
 
 After clicking to open the terminal, you need to enter the password again: raspberry, and then press Enter on the keyboard.
 
-  ![image-20240424141145027](./media/image-20240424141145027.png)
+![](./media/A33.png)
 
 After successful login, open the terminal, enter ***\*ip a\**** and then press Enter on the keyboard to view the ip and mac addresses.
 
@@ -138,7 +138,7 @@ After successful login, open the terminal, enter ***\*ip a\**** and then press E
 ip a
 ```
 
-  ![image-20240424140843998](./media/image-20240424140843998.png)
+  ![](./media/A32.png)
 
 As can be seen from the circle in the picture above, the mac address of my Raspberry Pi is: d8:3a:dd:bf:47:73, and the IP address is: 192.168.0.72(It will be used when we use xrdp to remotely log in to the Raspberry Pi system desktop).
 
@@ -152,39 +152,39 @@ The mac address will not change. If you are not sure which ip address it is, you
 sudo raspi-config
 ```
 
-![image-20240424145020125](./media/image-20240424145020125.png)
+![](./media/A34.png)
 
-2.Use![img](./media/d1160924ab18972ba911ffa8feb5fa849e510a2a.jpeg) of the keyboard to select "3 Interface Options" and press Enter.
+2.Use![img](./media/F36.png) of the keyboard to select "3 Interface Options" and press Enter.
 
-![image-20240424145202144](./media/image-20240424145202144.png)
+![image-20240424145202144](./media/A35.png)
 
 3.Select "I2 VNC" and press the Enter key, then select "YES" and press the Enter key. After the setting is successful, press the "ESC" key on the keyboard to exit it.
 
-![image-20240424145352644](./media/image-20240424145352644.png)
+![](./media/A36.png)
 
-![image-20240424145454275](./media/image-20240424145454275.png)
+![](./media/A37.png)
 
-![image-20240424145934799](./media/image-20240424145934799.png)
+![](./media/A38.png)
 
 ##### Step 4: Connect to the Raspberry Pi remotely via VNC viewer software
 
 1.Open the VNC viewer software, then click "File" and "New connection...".
 
-![ae1d321b3bb65e0de766d2782d736ab8](./media/ae1d321b3bb65e0de766d2782d736ab8.png)
+![](./media/A39.png)
 
 2. Enter the Raspberry Pi's IP address in the VNC Server and click "OK".
 
-![image-20240424150202645](./media/image-20240424150202645.png)
+![](./media/A40.png)
 
 3.Double click on the server named 192.168.0.72.
 
-![image-20240424150309374](./media/image-20240424150309374.png)
+![](./media/A41.png)
 
 4.Enter pi in the "Username" box, enter raspberry in the password box (note: this is the default if you have not changed the Raspberry Pi login name and password), then check "Remember password" and click OK.
 
-![image-20240424150458058](./media/image-20240424150458058.png)
+![](./media/A42.png)
 
 5.Login is successful.
 
-![image-20240424151047017](./media/image-20240424151047017.png)
+![](./media/A43.png)
 

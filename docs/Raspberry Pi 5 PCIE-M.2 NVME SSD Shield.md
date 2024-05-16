@@ -6,36 +6,126 @@ KEYESTUDIO Raspberry Pi 5 PCIE-M.2 NVME SSD Shield is an NVME M2 SSD PIP (PCIe P
 
 KEYESTUDIO Raspberry Pi 5 PCIE-M.2 NVME SSD Shield Supports：2230 / 2242 / 2260 / 2280 NVMe M2 SSD
 
-Incompatible NVMe  SSD：WD Blue SN550/SN580 series，WD Green SN350 series，WD Black SN850 series，WD Black SN770，Inland tn446 nvme drive，Corsair MP600 SSD，Other NVMe SSD drivers equipped with the same **Phison controller**.
+Incompatible NVMe SSD：WD Blue SN550/SN580 series，WD Green SN350 series，WD Black SN850 series，WD Black SN770，Inland tn446 nvme drive，Corsair MP600 SSD，Other NVMe SSD drivers equipped with the same **Phison controller**.
 
 For more details about SN550, refer to it： [New rpi-eeprom-update 2024-01-24 WD Blue SN550 nvme works now.](https://forums.raspberrypi.com/viewtopic.php?t=364327)
 
 <p style="color:red;">KEYESTUDIO Raspberry Pi 5 PCIE-M.2 NVME SSD Shield is only compatible with M.2 NVMe SSD. It is not compatible with M.2 SATA SSD, M.2 PCIe AHCI SSD or other M.2 non-NVMe devices.</p>
 
-## List：
+## Kit List：
 
-| 序号 | 名称                                               | 图片 | 数量 |
-| ---- | -------------------------------------------------- | ---- | ---- |
-| 1    | KEYESTUDIO Raspberry Pi 5 PCIE-M.2 NVME SSD Shield |      | 1    |
-| 2    | M2.5*17mm 双通铜柱                                 |      | 3    |
-| 3    | M2.5*5mm 圆头十字螺钉                              |      | 6    |
-| 4    | 16Pin FPC                                          |      | 1    |
-| 5    |                                                    |      |      |
-| 6    |                                                    |      |      |
-| 7    |                                                    |      |      |
-| 8    |                                                    |      |      |
+| No.  | Name                                               | Picture                     | QTY  |
+| ---- | -------------------------------------------------- | --------------------------- | ---- |
+| 1    | KEYESTUDIO Raspberry Pi 5 PCIE-M.2 NVME SSD Shield | ![List1](./media/List1.png) | 1    |
+| 2    | 16Pin FPC 30mm                                     | ![List4](./media/List4.png) | 1    |
+| 3    | 16Pin FPC 50mm                                     | ![List5](./media/List5.png) | 1    |
+| 4    | M2.5*17mm Double-pass Copper Pillar                | ![List2](./media/List2.png) | 3    |
+| 5    | M2.5*5mm Round Head Screw                          | ![List3](./media/List3.png) | 6    |
+| 6    | M2.5*3+3mm Single-pass Copper Pillar               | ![List6](./media/List6.png) | 1    |
+| 7    | M2.5*3 Flat Head Screw                             | ![List7](./media/List7.png) | 1    |
+| 8    | M2.5 Nut                                           | ![List8](./media/List8.png) | 4    |
+| 9    | M2.5*8+6 Single-pass Copper Pillar                 | ![img](./media/List10.jpg)  | 3    |
+| 10   | Phillips Screwdriver                               | ![List9](./media/List9.png) | 1    |
 
 
 
 ## Assembly：
 
-
+Before assembly, please check the list to see if there are any missing accessories. If so, please contact customer service.
 
 ### Assemble on top of Raspberry Pi：
 
+Required Components：
+
+| No.  | Name                                               | Picture                     | QTY  |
+| ---- | -------------------------------------------------- | --------------------------- | ---- |
+| 1    | KEYESTUDIO Raspberry Pi 5 PCIE-M.2 NVME SSD Shield | ![List1](./media/List1.png) | 1    |
+| 2    | 16Pin FPC 30mm                                     | ![List4](./media/List4.png) | 1    |
+| 3    | M2.5*17mm Double-pass Copper Pillar                | ![List2](./media/List2.png) | 3    |
+| 4    | M2.5*5mm Round Head Screw                          | ![List3](./media/List3.png) | 6    |
+| 5    | M2.5*3+3mm Single-pass Copper Pillar               | ![List6](./media/List6.png) | 1    |
+| 6    | M2.5*3 Flat Head Screw                             | ![List7](./media/List7.png) | 1    |
+| 7    | M2.5 Nut                                           | ![List8](./media/List8.png) | 1    |
+| 8    | Phillips Screwdriver                               | ![List9](./media/List9.png) | 1    |
+|      |                                                    |                             |      |
+
+Assembly Steps：
+
+1.Assemble the hard disk fixing screw position according to the size of your solid state drive: if the example uses 2280, then assemble the copper pillar in the hole of 2280.
+
+<p style="color:red">Different hard disks can assemble copper pillars into the corresponding holes to fix the hard disk.</p>
+
+![](./media/an1.png)
+
+![an2](./media/an2.png)
+
+2.Use M2.5x5 screws to assemble the M2.5x17 double-pass copper pillars on the Raspberry Pi 5 (note that the assembly hole positions must correspond to the assembly diagram).
+
+![an3](./media/an3.png)
+
+3.Assemble the 16Pin FPC 30mm to the PCIe interface of the Raspberry Pi.
+
+3.1 First, lift up the black buckle of the Raspberry Pi 5 PCIe interface. If you do not lift the black buckle, you will not be able to insert it into the 16Pin FPC.
+
+![an4](./media/an4.png)
+
+3.2 Insert the 16Pin FPC 30mm into the PCIe port of Raspberry Pi 5 (note the direction of the FPC, with the blue end facing outward). After inserting, press the black buckle to fix the FPC.
+
+![an5](./media/an5.png)
+
+4.Use M2*5MM Round Head Screws to assemble the PCIe-M.2 NVMe SSD Shield to the copper pillars.
+
+![an6](./media/an6.png)
+
+5.Assemble the 16Pin FPC 30mm to the PCIe interface of the PCIe-M.2 NVMe SSD Shield.
+
+5.1 First, flip up the black buckle of the PCIe interface.
+
+![an7](./media/an7.png)
+
+5.2 Insert the 16Pin FPC 30mm into the PCIe interface of the PCIe-M.2 NVMe SSD Shield (note that the blue side of the FPC is facing up). After inserting, press the black buckle to lock the FPC.
+
+![an8](./media/an8.png)
+
+6.Assemble the solid state drive, insert it diagonally into the solid state drive holder, then lay it flat and use the M2.5*3*5MM Flat Head Screw to fix it.
+
+![an9](./media/an9.png)
+
+![an10](./media/an10.png)
 
 
-### Assemble under the Raspberry Pi：
+
+### Assemble on bottom of Raspberry Pi：
+
+Required Components：
+
+| No.  | Name                                               | Picture                     | QTY  |
+| ---- | -------------------------------------------------- | --------------------------- | ---- |
+| 1    | KEYESTUDIO Raspberry Pi 5 PCIE-M.2 NVME SSD Shield | ![List1](./media/List1.png) | 1    |
+| 2    | 16Pin FPC 50mm                                     | ![List5](./media/List5.png) | 1    |
+| 3    | M2.5*5mm Round Head Screw                          | ![List3](./media/List3.png) | 3    |
+| 4    | M2.5*3+3mm Single-pass Copper Pillar               | ![List6](./media/List6.png) | 1    |
+| 5    | M2.5*3 Flat Head Screw                             | ![List7](./media/List7.png) | 1    |
+| 6    | M2.5 Nut                                           | ![List8](./media/List8.png) | 4    |
+| 7    | M2.5*8+6 Single-pass Copper Pillar                 | ![img](./media/List10.jpg)  | 3    |
+| 8    | Phillips Screwdriver                               | ![List9](./media/List9.png) | 1    |
+|      |                                                    |                             |      |
+
+Assembly Steps：
+
+Assembly on the bottom is the same as on the top.
+
+1.Use M2.5 Nut to fix the M2.5*8+6 Single-pass Copper Pillar to the bottom of Raspberry Pi 5.
+
+![an11](./media/an11.png)
+
+2.Assemble the 16Pin FPC 50mm to the Raspberry Pi 5 and PCIe-M.2 NVMe SSD Shield. After assembling the FPC, then assemble the solid state drive (the method is the same as that in assemble on top of Raspberry Pi).
+
+![an12](./media/an12.jpg)
+
+3.Flip the PCIe-M.2 NVMe SSD Shield to the bottom of the Raspberry Pi 5, and then use the M2*5MM Round Head Screws to fix it.
+
+![an13](./media/an13.jpg)
 
 
 
@@ -90,9 +180,9 @@ Save content after modification.
 
 1.5 After entering the remote desktop, if you are using an SSD solid state drive without partitions, then you cannot see the SSD solid state drive in your file bar, then we need to partition the hard drive.
 
-![image-20240423113024478](./media/image-20240423113024478.png)
+![image-20240423113024478](./media/F3.png)
 
-1.6 Tap![image-20240423113245027](./media/image-20240423113245027.png) and input.
+1.6 Tap![image-20240423113245027](./media/F4.png) and input.
 
 ```bash
 sudo fdisk -l
@@ -100,11 +190,11 @@ sudo fdisk -l
 
 After completing the input, press the Enter key.
 
-![image-20240423113451233](./media/image-20240423113451233.png)
+![image-20240423113451233](./media/F5.png)
 
 1.7 Find it according to the capacity of your hard drive and remember its name. For example, mine is a 128G hard drive, and its name is "nvme0n1". The Sector size needs to be remembered, which is 512 bytes in our place (it will be used when partitioning the hard disk).
 
-![image-20240423134426907](./media/image-20240423134426907.png)
+![image-20240423134426907](./media/F6.png)
 
 1.8 Now we perform partitioning operations and enter.
 
@@ -114,23 +204,23 @@ sudo fdisk /dev/nvme0n1
 
 After completing the input, press the Enter key.
 
-![image-20240423114433133](./media/image-20240423114433133.png)
+![](./media/F7.png)
 
 1.9 Type `n` after the Command (m for help): and press Enter.
 
-![image-20240423114209076](./media/image-20240423114209076.png)
+![](./media/F8.png)
 
 1.10 When you see Select (default p): , just use the default settings and press Enter.
 
-![image-20240423114506674](./media/image-20240423114506674.png)
+![image-20240423114506674](./media/F9.png)
 
 1.11 Press the Enter key.
 
-![image-20240423114713994](./media/image-20240423114713994.png)
+![](./media/F10.png)
 
 1.12 Press the Enter key.
 
-![image-20240423114927650](./media/image-20240423114927650.png)
+![](./media/F11.png)
 
  1.13 This step involves calculation of capacity allocation. If you want to partition, please read it carefully. In the example we are using a 128G hard disk, and it will be divided into three 42G areas.
 
@@ -148,11 +238,11 @@ $$
 $$
 83355877 is the cutoff byte of the first area, enter `83355877` and press Enter.
 
-![image-20240423141317477](./media/image-20240423141317477.png)
+![](./media/F12.png)
 
 Enter the command `n` , and press the Enter key until the byte partition appears.
 
-![image-20240423141933431](./media/image-20240423141933431.png)
+![](./media/F13.png)
 
 Multiply 83355877 by 2 to get the byte at the end of the second area.
 $$
@@ -160,15 +250,15 @@ $$
 $$
 Enter `166711754` and press Enter.
 
-![image-20240423142028951](./media/image-20240423142028951.png)
+![](./media/F14.png)
 
 Then enter the `n` command, because this is the last area, just press Enter key.
 
-![image-20240423142141943](./media/image-20240423142141943.png)
+![](./media/F15.png)
 
  1.13 Enter the `w` command to save it (be sure to report an error otherwise you will have to repartition).
 
-![image-20240423142307313](./media/image-20240423142307313.png)
+![](./media/F16.png)
 
 1.14 After the partition is completed, enter the `sudo fdisk -l` command to view the partition name.
 
@@ -176,7 +266,7 @@ Then enter the `n` command, because this is the last area, just press Enter key.
 sudo fdisk -l
 ```
 
-![image-20240423143708326](./media/image-20240423143708326.png)
+![](./media/F17.png)
 
 1.14 Partition formatting and mounting. Each partition needs to be formatted so that it can be mounted and used. You can use the `mkfs` command to format a partition, such as `sudo mkfs.ext4 /dev/sdXY` (replace XY with the partition number you want to format, such as /dev/sdX1). The ext4 file system is used here, but you can also choose other file systems, such as FAT32, NTFS, etc.
 
@@ -198,11 +288,11 @@ Format the third partition `nvme0n1p3`, we will format it as NTFS.
 sudo mkfs.ntfs /dev/nvme0n1p3
 ```
 
-![image-20240423150034845](./media/image-20240423150034845.png)
+![](./media/F18.png)
 
 1.15 Open the folder and you will see the partitioned disks.
 
-![image-20240423150432608](./media/image-20240423150432608.png)
+![](./media/F19.png)
 
 ### 2.As a boot disk for Raspberry Pi 5：
 
@@ -218,7 +308,7 @@ D. Remove the SD card and power on the Raspberry Pi
 
 #### 2.1 Use SD card to copy image system to SSD solid state drive
 
-2.1.1  First burn the image system to the SD card, then plug and unplug the SD card reader and find ![image-20240424094335329](./media/image-20240424094335329.png) in![image-20240424094253582](./media/image-20240424094253582.png)file, and double-click to open it, then add the following code at the end of the file:
+2.1.1  First burn the image system to the SD card, then plug and unplug the SD card reader and find ![image-20240424094335329](./media/F21.png) in![](./media/F20.png)file, and double-click to open it, then add the following code at the end of the file:
 
 ```bash
 dtparam=pciex1
@@ -235,41 +325,41 @@ dtparam=pciex1_gen=3
 
 Save content after modification.
 
-![F2](./media/F2.png)
+![22](./media/F22.png)
 
 Create a text file named SSH in bootfs and delete the following .txt.
 
-![image-20240424110549877](./media/image-20240424110549877.png)
+![image-20240424110549877](./media/F23.png)
 
-After configuration, use puTTY software to connect and open VNC, then use VNC software to enter the remote desktop, click ![image-20240423191146646](./media/image-20240423191146646.png)on the upper right corner(for entering the desktop, refer to the Raspberry Pi Basic Tutorial).
+After configuration, use puTTY software to connect and open VNC, then use VNC software to enter the remote desktop, click ![](./media/F24.png)on the upper right corner(for entering the desktop, refer to the Raspberry Pi Basic Tutorial).
 
-![image-20240423191120775](./media/image-20240423191120775.png)
+![](./media/F25.png)
 
-2.1.2 Tap![image-20240423191304596](./media/image-20240423191304596.png) and ![image-20240423191321466](./media/image-20240423191321466.png).
+2.1.2 Tap![](./media/F26.png) and ![](./media/F27.png).
 
-![image-20240423191248282](./media/image-20240423191248282.png)
+![](./media/F28.png)
 
 2.1.3 Click the box behind "Copy From Device" and select SD.
 
-![image-20240423191551228](./media/image-20240423191551228.png)
+![](./media/F29.png)
 
-![image-20240423191608982](./media/image-20240423191608982.png)
+![](./media/F30.png)
 
 2.1.4 Click the box behind "copy To Device" and select our SSD.
 
-![20240423191811](./media/image-20240423191811.png)
+![](./media/F31.png)
 
 2.1.5 Click “Start” and “YES”.
 
-![image-20240423192032](./media/image-20240423192032.png)
+![](./media/F32.png)
 
 Wait for copy to complete.
 
-![image-20240423192055](./media/image-20240423192055.png)
+![image-20240423192055](./media/F33.png)
 
 Tap “OK”.
 
-![image-20240423192320](./media/image-20240423192320.png)
+![](./media/F34.png)
 
 2.1.6 Set the startup sequence, enter the command and press Enter.
 
@@ -277,24 +367,24 @@ Tap “OK”.
 sudo raspi-config
 ```
 
-![b6fb09878619910b477bea7478bab110](./media/b6fb09878619910b477bea7478bab110.png)
+![b6fb09878619910b477bea7478bab110](./media/F35.png)
 
-Use ![img](./media/d1160924ab18972ba911ffa8feb5fa849e510a2a.jpeg) on your keyboard to select **6 Advanced Options** and press Enter to confirm it.
+Use ![img](./media/F36.png) on your keyboard to select **6 Advanced Options** and press Enter to confirm it.
 
-![image-20240424111602399](./media/image-20240424111602399.png) 
+![](./media/F37.png) 
 
 Select **A4 Boot Order** and press Enter.
 
-![image-20240424111930360](./media/image-20240424111930360.png)
+![](./media/F38.png)
 
 Select **B2 NVMe/USB Boot** and press Enter.
 
-![image-20240424112022309](./media/image-20240424112022309.png)
+![](./media/F39.png)
 
 Select **OK** and press Enter，then press the ESC key on the keyboard to exit the settings window.
 
-![image-20240424112802942](./media/image-20240424112802942.png)
+![](./media/F40.png)
 
 2.1.7 Turn off the power and remove the SD card, then power on the computer.
 
-![image-20240424113012257](./media/image-20240424113012257.png)
+![](./media/F41.png)
