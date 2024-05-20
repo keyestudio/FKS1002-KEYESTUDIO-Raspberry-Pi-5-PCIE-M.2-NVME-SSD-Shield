@@ -1,6 +1,6 @@
 # KEYESTUDIO Raspberry Pi 5 PCIE-M.2 NVME SSD Shield
 
-## Overview
+## 1. Overview
 
 KEYESTUDIO Raspberry Pi 5 PCIE-M.2 NVME SSD Shield is an NVME M2 SSD PIP (PCIe Peripheral Board) for Raspberry Pi 5, which uses the new PCIE interface of Raspberry Pi 5 to connect NVME M2 SSD for fast data transfer and ultra-fast start up.
 
@@ -12,7 +12,7 @@ For more details about SN550, refer to it： [New rpi-eeprom-update 2024-01-24 W
 
 <p style="color:red;">KEYESTUDIO Raspberry Pi 5 PCIE-M.2 NVME SSD Shield is only compatible with M.2 NVMe SSD. It is not compatible with M.2 SATA SSD, M.2 PCIe AHCI SSD or other M.2 non-NVMe devices.</p>
 
-## Kit List：
+## 2. Kit List
 
 | No.  | Name                                               | Picture                     | QTY  |
 | ---- | -------------------------------------------------- | --------------------------- | ---- |
@@ -29,11 +29,11 @@ For more details about SN550, refer to it： [New rpi-eeprom-update 2024-01-24 W
 
 
 
-## Assembly：
+## 3. Assembly
 
 Before assembly, please check the list to see if there are any missing accessories. If so, please contact customer service.
 
-### Assemble on top of Raspberry Pi：
+### 3.1 Assemble on top of Raspberry Pi：
 
 Required Components：
 
@@ -95,7 +95,7 @@ Assembly Steps：
 
 
 
-### Assemble on bottom of Raspberry Pi：
+### 3.2 Assemble on bottom of Raspberry Pi：
 
 Required Components：
 
@@ -129,19 +129,19 @@ Assembly on the bottom is the same as on the top.
 
 
 
-## Raspberry Pi Basic Tutorial：
+## 4. Raspberry Pi Basic Tutorial
 
-<p style="color:red;">Refer to the link</p>
+<p style="color:red;">If you are a beginner, please click on the link to view the Raspberry Pi Basic Tutorial. The basic tutorial includes how to burn the image system for Raspberry Pi and how to use various tools and download links for Raspberry Pi</p>
 
 [Raspberry Pi basic tutorial](RaspberryPiBasicTutorial.md)
 
-## Using Method：
+## 5. Using Method：
 
 The Raspberry Pi 5 has an FPC connector on the side of the board，which provides a PCIe Gen 2.0 ×1 interface. This tutorial introduces and demonstrates how to use this PCIe interface to connect an M.2 solid-state drive (SSD). The SSD can be used as a boot disk or additional storage.
 
 ![img](./media/F1.jpeg)
 
-### 1.As a storage disk for Raspberry Pi 5：
+### 5.1 As a storage disk for Raspberry Pi 5：
 
 Steps to use SSD firmware as a storage disk:
 
@@ -229,13 +229,29 @@ After completing the input, press the Enter key.
 Calculate how many sector bytes are needed for each area. From the command line prompt, we can know that our hard disk bytes start from 2048 and end at 250069679.
 
 Then we first need to subtract the previous 2048 to get the total number of bytes of 128G:
+
+
+
+
 $$
 250069679-2048=250067631
 $$
+
+
+
+
 Because we want to divide 128G into 3 parts, we need to divide the total number of bytes by 3.
+
+
+
+
 $$
 250067631÷3=83355877
 $$
+
+
+
+
 83355877 is the cutoff byte of the first area, enter `83355877` and press Enter.
 
 ![](./media/F12.png)
@@ -245,9 +261,17 @@ Enter the command `n` , and press the Enter key until the byte partition appears
 ![](./media/F13.png)
 
 Multiply 83355877 by 2 to get the byte at the end of the second area.
+
+
+
+
 $$
 83355877×2=166711754
 $$
+
+
+
+
 Enter `166711754` and press Enter.
 
 ![](./media/F14.png)
@@ -294,9 +318,9 @@ sudo mkfs.ntfs /dev/nvme0n1p3
 
 ![](./media/F19.png)
 
-### 2.As a boot disk for Raspberry Pi 5：
+### 5.2 As a boot disk for Raspberry Pi 5：
 
-Idea:
+**Idea:**
 
 A. Start using the TF card image first (note: modify the config.txt of the TF card first)
 
@@ -306,7 +330,7 @@ C. Modify the EEPROM and enable PCIe boot mode
 
 D. Remove the SD card and power on the Raspberry Pi
 
-#### 2.1 Use SD card to copy image system to SSD solid state drive
+ **5.2.1**  Use SD card to copy image system to SSD solid state drive
 
 2.1.1  First burn the image system to the SD card, then plug and unplug the SD card reader and find ![image-20240424094335329](./media/F21.png) in![](./media/F20.png)file, and double-click to open it, then add the following code at the end of the file:
 
@@ -335,21 +359,21 @@ After configuration, use puTTY software to connect and open VNC, then use VNC so
 
 ![](./media/F25.png)
 
-2.1.2 Tap![](./media/F26.png) and ![](./media/F27.png).
+**5.1.2** Tap![](./media/F26.png) and ![](./media/F27.png).
 
 ![](./media/F28.png)
 
-2.1.3 Click the box behind "Copy From Device" and select SD.
+**5.1.3** Click the box behind "Copy From Device" and select SD.
 
 ![](./media/F29.png)
 
 ![](./media/F30.png)
 
-2.1.4 Click the box behind "copy To Device" and select our SSD.
+**5.1.4** Click the box behind "copy To Device" and select our SSD.
 
 ![](./media/F31.png)
 
-2.1.5 Click “Start” and “YES”.
+**5.1.5** Click “Start” and “YES”.
 
 ![](./media/F32.png)
 
@@ -361,7 +385,7 @@ Tap “OK”.
 
 ![](./media/F34.png)
 
-2.1.6 Set the startup sequence, enter the command and press Enter.
+**5.1.6** Set the startup sequence, enter the command and press Enter.
 
 ```bash
 sudo raspi-config
@@ -385,6 +409,6 @@ Select **OK** and press Enter，then press the ESC key on the keyboard to exit t
 
 ![](./media/F40.png)
 
-2.1.7 Turn off the power and remove the SD card, then power on the computer.
+**5.1.7** Turn off the power and remove the SD card, then power on the computer.
 
 ![](./media/F41.png)
