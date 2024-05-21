@@ -12,6 +12,10 @@ For more details about SN550, refer to it： [New rpi-eeprom-update 2024-01-24 W
 
 <p style="color:red;">KEYESTUDIO Raspberry Pi 5 PCIE-M.2 NVME SSD Shield is only compatible with M.2 NVMe SSD. It is not compatible with M.2 SATA SSD, M.2 PCIe AHCI SSD or other M.2 non-NVMe devices.</p>
 
+**Interface Introduction：**
+
+![F44](./media/F44.png)
+
 ## 2. Kit List
 
 | No.  | Name                                               | Picture                     | QTY  |
@@ -20,7 +24,7 @@ For more details about SN550, refer to it： [New rpi-eeprom-update 2024-01-24 W
 | 2    | 16Pin FPC 30mm                                     | ![List4](./media/List4.png) | 1    |
 | 3    | 16Pin FPC 50mm                                     | ![List5](./media/List5.png) | 1    |
 | 4    | M2.5*17mm Double-pass Copper Pillar                | ![List2](./media/List2.png) | 3    |
-| 5    | M2.5*5mm Round Head Screw                          | ![List3](./media/List3.png) | 6    |
+| 5    | M2.5*6mm Round Head Screw                          | ![List3](./media/List3.png) | 6    |
 | 6    | M2.5*3+3mm Single-pass Copper Pillar               | ![List6](./media/List6.png) | 1    |
 | 7    | M2.5*3 Flat Head Screw                             | ![List7](./media/List7.png) | 1    |
 | 8    | M2.5 Nut                                           | ![List8](./media/List8.png) | 4    |
@@ -41,10 +45,10 @@ Required Components：
 | ---- | -------------------------------------------------- | --------------------------- | ---- |
 | 1    | KEYESTUDIO Raspberry Pi 5 PCIE-M.2 NVME SSD Shield | ![List1](./media/List1.png) | 1    |
 | 2    | 16Pin FPC 30mm                                     | ![List4](./media/List4.png) | 1    |
-| 3    | M2.5*17mm Double-pass Copper Pillar                | ![List2](./media/List2.png) | 3    |
-| 4    | M2.5*5mm Round Head Screw                          | ![List3](./media/List3.png) | 6    |
-| 5    | M2.5*3+3mm Single-pass Copper Pillar               | ![List6](./media/List6.png) | 1    |
-| 6    | M2.5*3 Flat Head Screw                             | ![List7](./media/List7.png) | 1    |
+| 3    | M2.5x17mm Double-pass Copper Pillar                | ![List2](./media/List2.png) | 3    |
+| 4    | M2.5x6mm Round Head Screw                          | ![List3](./media/List3.png) | 6    |
+| 5    | M2.5x3+3mm Single-pass Copper Pillar               | ![List6](./media/List6.png) | 1    |
+| 6    | M2.5x3 Flat Head Screw                             | ![List7](./media/List7.png) | 1    |
 | 7    | M2.5 Nut                                           | ![List8](./media/List8.png) | 1    |
 | 8    | Phillips Screwdriver                               | ![List9](./media/List9.png) | 1    |
 |      |                                                    |                             |      |
@@ -59,7 +63,7 @@ Assembly Steps：
 
 ![an2](./media/an2.png)
 
-2.Use M2.5x5 screws to assemble the M2.5x17 double-pass copper pillars on the Raspberry Pi 5 (note that the assembly hole positions must correspond to the assembly diagram).
+2.Use M2.5x6 screws to assemble the M2.5x17 double-pass copper pillars on the Raspberry Pi 5 (note that the assembly hole positions must correspond to the assembly diagram).
 
 ![an3](./media/an3.png)
 
@@ -73,7 +77,7 @@ Assembly Steps：
 
 ![an5](./media/an5.png)
 
-4.Use M2*5MM Round Head Screws to assemble the PCIe-M.2 NVMe SSD Shield to the copper pillars.
+4.Use M2.5x6MM Round Head Screws to assemble the PCIe-M.2 NVMe SSD Shield to the copper pillars.
 
 ![an6](./media/an6.png)
 
@@ -87,7 +91,7 @@ Assembly Steps：
 
 ![an8](./media/an8.png)
 
-6.Assemble the solid state drive, insert it diagonally into the solid state drive holder, then lay it flat and use the M2.5*3*5MM Flat Head Screw to fix it.
+6.Assemble the solid state drive, insert it diagonally into the solid state drive holder, then lay it flat and use the M2.5x3x5MM Flat Head Screw to fix it.
 
 ![an9](./media/an9.png)
 
@@ -103,11 +107,11 @@ Required Components：
 | ---- | -------------------------------------------------- | --------------------------- | ---- |
 | 1    | KEYESTUDIO Raspberry Pi 5 PCIE-M.2 NVME SSD Shield | ![List1](./media/List1.png) | 1    |
 | 2    | 16Pin FPC 50mm                                     | ![List5](./media/List5.png) | 1    |
-| 3    | M2.5*5mm Round Head Screw                          | ![List3](./media/List3.png) | 3    |
-| 4    | M2.5*3+3mm Single-pass Copper Pillar               | ![List6](./media/List6.png) | 1    |
-| 5    | M2.5*3 Flat Head Screw                             | ![List7](./media/List7.png) | 1    |
+| 3    | M2.5x6mm Round Head Screw                          | ![List3](./media/List3.png) | 3    |
+| 4    | M2.5x3+3mm Single-pass Copper Pillar               | ![List6](./media/List6.png) | 1    |
+| 5    | M2.5x3 Flat Head Screw                             | ![List7](./media/List7.png) | 1    |
 | 6    | M2.5 Nut                                           | ![List8](./media/List8.png) | 4    |
-| 7    | M2.5*8+6 Single-pass Copper Pillar                 | ![img](./media/List10.jpg)  | 3    |
+| 7    | M2.5x8+6 Single-pass Copper Pillar                 | ![img](./media/List10.jpg)  | 3    |
 | 8    | Phillips Screwdriver                               | ![List9](./media/List9.png) | 1    |
 |      |                                                    |                             |      |
 
@@ -115,7 +119,7 @@ Assembly Steps：
 
 Assembly on the bottom is the same as on the top.
 
-1.Use M2.5 Nut to fix the M2.5*8+6 Single-pass Copper Pillar to the bottom of Raspberry Pi 5.
+1.Use M2.5 Nut to fix the M2.5x8+6 Single-pass Copper Pillar to the bottom of Raspberry Pi 5.
 
 ![an11](./media/an11.png)
 
@@ -123,7 +127,7 @@ Assembly on the bottom is the same as on the top.
 
 ![an12](./media/an12.jpg)
 
-3.Flip the PCIe-M.2 NVMe SSD Shield to the bottom of the Raspberry Pi 5, and then use the M2*5MM Round Head Screws to fix it.
+3.Flip the PCIe-M.2 NVMe SSD Shield to the bottom of the Raspberry Pi 5, and then use the M2.5x6MM Round Head Screws to fix it.
 
 ![an13](./media/an13.jpg)
 
@@ -145,19 +149,25 @@ The Raspberry Pi 5 has an FPC connector on the side of the board，which provide
 
 Steps to use SSD firmware as a storage disk:
 
- A. Modify config.txt in the tf card boot partition and enable the PCIe interface
+​	 A. Modify config.txt in the SD card bootfs partition and enable the PCIe interface
 
- B. Connect the solid state drive
+​	 B. Connect the solid state drive
 
- C. Partition the SSD
+​	 C. Partition the SSD
 
- D. The solid-state drive can be recognized after power-on and startup
+​	 D. The solid-state drive can be recognized after power-on and startup
 
-1.1 Use Raspberry Pi Imager software to burn the Raspberry Pi 5 image system to the SD card
+1.1 Use Raspberry Pi Imager software to burn the Raspberry Pi 5 image system to the SD card（If you don't know how to burn it, check out [Raspberry Pi Basic Tutorial](RaspberryPiBasicTutorial.md)）
 
-1.2 After the system burning is completed, insert the SD card and you can see the boot disk in the TF card and enter the boot disk.
+1.2 After the system burning is completed, insert the SD card and you can see the boot disk in the SD card and enter the boot disk.
 
-1.3 Find and open config.txt, and add the following code at the end of the file.
+![F42](./media/F42.png)
+
+1.3 Find and open config.txt
+
+![F43](./media/F43.png)
+
+add the following code at the end of the file.
 
 ```bash
 dtparam=pciex1
@@ -280,11 +290,11 @@ Then enter the `n` command, because this is the last area, just press Enter key.
 
 ![](./media/F15.png)
 
- 1.13 Enter the `w` command to save it (be sure to report an error otherwise you will have to repartition).
+ 1.14 Enter the `w` command to save it (Be sure to save, otherwise you will have to repartition).
 
 ![](./media/F16.png)
 
-1.14 After the partition is completed, enter the `sudo fdisk -l` command to view the partition name.
+1.15 After the partition is completed, enter the `sudo fdisk -l` command to view the partition name.
 
 ```bash
 sudo fdisk -l
@@ -292,7 +302,7 @@ sudo fdisk -l
 
 ![](./media/F17.png)
 
-1.14 Partition formatting and mounting. Each partition needs to be formatted so that it can be mounted and used. You can use the `mkfs` command to format a partition, such as `sudo mkfs.ext4 /dev/sdXY` (replace XY with the partition number you want to format, such as /dev/sdX1). The ext4 file system is used here, but you can also choose other file systems, such as FAT32, NTFS, etc.
+1.16 Partition formatting and mounting. Each partition needs to be formatted so that it can be mounted and used. You can use the `mkfs` command to format a partition, such as `sudo mkfs.ext4 /dev/sdXY` (replace XY with the partition number you want to format, such as /dev/sdX1). The ext4 file system is used here, but you can also choose other file systems, such as FAT32, NTFS, etc.
 
 We format the partition as FTA32 and format the first partition `nvme0n1p1`.
 
@@ -314,7 +324,7 @@ sudo mkfs.ntfs /dev/nvme0n1p3
 
 ![](./media/F18.png)
 
-1.15 Open the folder and you will see the partitioned disks.
+1.17 Open the folder and you will see the partitioned disks.
 
 ![](./media/F19.png)
 
@@ -322,7 +332,7 @@ sudo mkfs.ntfs /dev/nvme0n1p3
 
 **Idea:**
 
-A. Start using the TF card image first (note: modify the config.txt of the TF card first)
+A. Start using the SD card image first (note: modify the config.txt of the SD card first)
 
 B. Copy the system to the SSD
 
