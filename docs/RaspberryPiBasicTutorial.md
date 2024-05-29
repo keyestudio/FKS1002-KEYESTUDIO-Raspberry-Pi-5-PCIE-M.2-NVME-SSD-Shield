@@ -20,11 +20,9 @@ Download link： [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
 
 After the download is successful, click Install and open it after installation.
 
-![](./media/A2.png)
+![A2](./media/A2.png)
 
- 
-
-##### （2）Install putty（for SSH remote connection）
+ （2）Install putty（for SSH remote connection）
 
 Download link：[https://www.chiark.greenend.org.uk/~sgtatham/putty/](https://www.chiark.greenend.org.uk/~sgtatham/putty/)
 
@@ -100,7 +98,9 @@ Download link：[https://www.realvnc.com/en/connect/download/viewer/](https://ww
 
 This step can only be performed after installing the software.
 
-##### Step 1: Use the Raspberry Pi Imager software to burn the Raspberry Pi image system to the SD card and create an SSH file in bootfs.
+![image-20240424131421972](./media/A2.png)
+
+##### Step 1: Use the Raspberry Pi Imager software to burn the Raspberry Pi image system to the SD card.
 
 We use Raspberry Pi 5, so select Raspberry Pi 5 in the "Raspberry Pi Device".
 
@@ -114,15 +114,35 @@ Select the SD card to which we want to burn the Raspberry Pi image system in the
 
 ![image-20240424132318451](./media/A24.png)
 
-Then click![image-20240424132856746](./media/A25.png) to start burning
+Then click![image-20240424132856746](./media/A25.png) 
 
-After the image system is burned, unplug the card reader and plug it in again to see "bootfs". Create a new text file named SSH, delete the .txt, and then copy it to the bootfs directory of the SD card. Then the SSH login function can be enabled, as shown in the figure below:
+Set the Raspberry Pi login name and password, click on `EDITSettings`
 
-![img](./media/A26.png)
+![a46](./media/A46.png)
+
+First, check `Set host name`and `Set username and password`, then fill in `Username` as' pi 'and`Password`as' raspberry' (you can also change it to the name and password you want)
+
+![a47](./media/A47.png)
+
+After setting the login name and password, click on `Services` on the right side, then check`Enable SSH `and`Use password authentication`, and finally click on`SAVE `
+
+![a48](./media/A48.png)
+
+
+
+Click`YES`
+
+![a49](./media/A49.png)
+
+Click `YES` to start burning, be patient and wait until the burning is completed
+
+![a44](./media/A44.png)
+
+![a45](./media/A45.png)
 
 ##### Step 2: Use WinSCP software to find the IP address of the Raspberry Pi
 
-Use WinSCP to log in through the default name, default username, and default password of the Raspberry Pi system. (Only one Raspberry Pi can be connected to the same network).![image-20240424142624855](./media/A27.png)
+Use WinSCP to log in through the default name, default username, and default password of the Raspberry Pi system,These are set when burning the system and need to be consistent with the burning system. (Only one Raspberry Pi can be connected to the same network).![image-20240424142624855](./media/A27.png)
 
  ![image-20240424142642564](./media/A28.png)
 
