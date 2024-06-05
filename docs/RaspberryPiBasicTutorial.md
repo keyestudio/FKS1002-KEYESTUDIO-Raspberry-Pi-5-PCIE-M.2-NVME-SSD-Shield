@@ -8,7 +8,7 @@ This tutorial covers how to burn the Raspberry Pi system, how to find the IP add
 
 (1) Raspberry Pi 4B/5  (2) TFT memory card above 16G  (3) Card reader  (4) Commonly used computer and accessories
 
-### **2.Required Software：**
+### **2.Operation Method：**
 
 ##### （1）Raspberry Pi Imager Software（official software）
 
@@ -22,7 +22,45 @@ After the download is successful, click Install and open it after installation.
 
 ![A2](./media/A2.png)
 
- （2）Install putty（for SSH remote connection）
+We use Raspberry Pi 5, so select Raspberry Pi 5 in the "Raspberry Pi Device".
+
+![image-20240424131421972](./media/A22.png)
+
+Select "Raspberry Pi OS (64-bit)" in the column below "Operating System" (64-bit or 32-bit is according to the bit of your Raspberry Pi).
+
+![image-20240424131615662](./media/A23.png)
+
+Select the SD card to which we want to burn the Raspberry Pi image system in the column below "Storage".
+
+![image-20240424132318451](./media/A24.png)
+
+Then click![image-20240424132856746](./media/A25.png) 
+
+Set the Raspberry Pi login name and password, click on `EDITSETTINGS`.
+
+![a46](./media/A46.png)
+
+First, check `Set host name`and `Set username and password`, then fill in `Username` as' pi 'and`Password`as' raspberry' (you can also change it to the name and password you want).
+
+![a47](./media/A47.png)
+
+After setting the login name and password, click on `Services` on the right side, then check`Enable SSH `and`Use password authentication`, and finally click on`SAVE `.
+
+![a48](./media/A48.png)
+
+
+
+Click`YES`.
+
+![a49](./media/A49.png)
+
+Click `YES` to start burning, be patient and wait until the burning is completed.
+
+![a44](./media/A44.png)
+
+![a45](./media/A45.png)
+
+####  （2）Install putty（for SSH remote connection）
 
 Download link：[https://www.chiark.greenend.org.uk/~sgtatham/putty/](https://www.chiark.greenend.org.uk/~sgtatham/putty/)
 
@@ -46,17 +84,7 @@ d. Tap “Finish”.
 
  ![img](./media/A9.png)
 
-e. Using Method
 
-Enter the IP address in the "Host Name (or IP address)" box and click "OPEN".
-
-![](./media/A10.png)
-
-login as：If you don't modify it, the default is "pi".
-
-pi@xxx.xxx.xxx.xxx‘s password：If you don't modify it, the default is “raspberry”.
-
-![](./media/A11.png)
 
 ##### (3) SSH Remote Login Software WinSCP (can view the Raspberry Pi IP address)
 
@@ -80,68 +108,6 @@ c. After a few seconds, the installation will be completed, click "Finish".
 
    ![img](./media/A19.png)
 
-
-
-
-
-##### （4）VNC viewer（VNC is used to log in to the Raspberry Pi system interface）
-
-Download link：[https://www.realvnc.com/en/connect/download/viewer/](https://www.realvnc.com/en/connect/download/viewer/)
-
-![img](./media/A20.png)
-
- Then Install it.
-
-![](./media/A21.png)
-
-#### 3.Operation Method
-
-This step can only be performed after installing the software.
-
-![image-20240424131421972](./media/A2.png)
-
-##### Step 1: Use the Raspberry Pi Imager software to burn the Raspberry Pi image system to the SD card.
-
-We use Raspberry Pi 5, so select Raspberry Pi 5 in the "Raspberry Pi Device".
-
-![image-20240424131421972](./media/A22.png)
-
-Select "Raspberry Pi OS (64-bit)" in the column below "Operating System" (64-bit or 32-bit is according to the bit of your Raspberry Pi).
-
-![image-20240424131615662](./media/A23.png)
-
-Select the SD card to which we want to burn the Raspberry Pi image system in the column below "Storage".
-
-![image-20240424132318451](./media/A24.png)
-
-Then click![image-20240424132856746](./media/A25.png) 
-
-Set the Raspberry Pi login name and password, click on `EDITSettings`
-
-![a46](./media/A46.png)
-
-First, check `Set host name`and `Set username and password`, then fill in `Username` as' pi 'and`Password`as' raspberry' (you can also change it to the name and password you want)
-
-![a47](./media/A47.png)
-
-After setting the login name and password, click on `Services` on the right side, then check`Enable SSH `and`Use password authentication`, and finally click on`SAVE `
-
-![a48](./media/A48.png)
-
-
-
-Click`YES`
-
-![a49](./media/A49.png)
-
-Click `YES` to start burning, be patient and wait until the burning is completed
-
-![a44](./media/A44.png)
-
-![a45](./media/A45.png)
-
-##### Step 2: Use WinSCP software to find the IP address of the Raspberry Pi
-
 Use WinSCP to log in through the default name, default username, and default password of the Raspberry Pi system,These are set when burning the system and need to be consistent with the burning system. (Only one Raspberry Pi can be connected to the same network).![image-20240424142624855](./media/A27.png)
 
  ![image-20240424142642564](./media/A28.png)
@@ -164,9 +130,21 @@ As can be seen from the circle in the picture above, the mac address of my Raspb
 
 The mac address will not change. If you are not sure which ip address it is, you can use the mac address to confirm it.
 
-##### Step 3: Use PuTTY software to remotely connect to the Raspberry Pi, and set the Raspberry Pi to open VNC
+##### (4)  Use PuTTY software to remotely connect to the Raspberry Pi, and set the Raspberry Pi to open VNC
 
-1. Use the PuTTY software to open the VNC of the Raspberry Pi, log in with the IP found on the WinSCP software, then enter `sudo raspi-config` after successful login and press Enter to enter the setting page (if you have opened the PuTTY software through the WinSCP software, there is no need to reopen it).
+1. Use the PuTTY software to open the VNC of the Raspberry Pi, log in with the IP found on the WinSCP software
+
+Enter the IP address in the "Host Name (or IP address)" box and click "OPEN".
+
+![](./media/A10.png)
+
+login as：If you don't modify it, the default is "pi".
+
+pi@xxx.xxx.xxx.xxx‘s password：If you don't modify it, the default is “raspberry”.
+
+![](./media/A11.png)
+
+ Then enter `sudo raspi-config` after successful login and press Enter to enter the setting page (if you have opened the PuTTY software through the WinSCP software, there is no need to reopen it).
 
 ```bash
 sudo raspi-config
@@ -186,7 +164,15 @@ sudo raspi-config
 
 ![](./media/A38.png)
 
-##### Step 4: Connect to the Raspberry Pi remotely via VNC viewer software
+##### （5）VNC viewer（VNC is used to log in to the Raspberry Pi system interface）
+
+Download link：[https://www.realvnc.com/en/connect/download/viewer/](https://www.realvnc.com/en/connect/download/viewer/)
+
+![img](./media/A20.png)
+
+ Then Install it.
+
+![](./media/A21.png)
 
 1.Open the VNC viewer software, then click "File" and "New connection...".
 
